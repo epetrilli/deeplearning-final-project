@@ -18,6 +18,7 @@ https://arxiv.org/pdf/1702.05663.pdf
 
 
 ### Meeting 1
+  - Brainstorming 
   - Research on state-based agents
   - Run a test-agent
   - Read and understand structure of starter code
