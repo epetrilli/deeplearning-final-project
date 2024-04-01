@@ -35,4 +35,5 @@ Important Links and Weekly Objectives/Meetings
   - Sebastien ran test agent, Thads is working on running some (for issues related to running agents, look at EdDiscussion for fixes)
   - DECIDED: Start with state-based approach, with potential for shifting to image-based approach based on unanimous deision after a certain deadline
   - Start to think about going into the next meeting with directed tasks and goals -> Wednesday: Identify and designate tasks
+  - Figure out version control
   
