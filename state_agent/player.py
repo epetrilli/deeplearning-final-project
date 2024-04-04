@@ -24,6 +24,9 @@ class Team:
            TODO: feel free to edit or delete any of the code below
         """
         self.team, self.num_players = team, num_players
+
+        # call reset() on gym env to init the env state
+
         return ['tux'] * num_players
 
     def act(self, player_state, opponent_state, soccer_state):
@@ -59,3 +62,76 @@ class Team:
         """
         # TODO: Change me. I'm just cruising straight
         return [dict(acceleration=1, steer=0)] * self.num_players
+
+
+class ProposedTeam:
+    agent_type = 'state'
+    
+    def __init__(self):
+        """
+        Initialize the team agent.
+        """
+        self.team = None
+        self.num_players = None
+        #self.actor = ActorNetwork(...) 
+        #self.critic = CriticNetwork(...)  
+        #self.memory = Memory(...) 
+        
+        # Hyperparameters (fake values)
+        self.gamma = 0.99 
+        self.alpha = 0.0003
+        self.gae_lambda = 0.95
+        self.policy_clip = 0.2
+        self.batch_size = 64
+        self.n_epochs = 10  # Number of epochs to train for each learning step
+    
+    def load_models(self):
+        """
+        Load the model parameters for both the actor and critic networks.
+        """
+        pass
+    
+    def save_models(self):
+        """
+        Save the model parameters for both the actor and critic networks.
+        """
+        pass
+    
+    def new_match(self, team: int, num_players: int) -> list:
+        """
+        Prepares the team for a new match.
+        """
+        pass
+    
+    def choose_action(self, player_state, opponent_state, soccer_state):
+        """
+        Decide actions for each player based on the current game state.
+        """
+        # This will involve processing the states through the actor network
+        # and deciding on actions
+        
+        pass
+    
+    def learn(self):
+        """
+        Update the actor and critic networks based on stored experiences.
+        """
+        # This is where the bulk of PPO's learning logic will go.
+        
+        # For each epoch:
+            # Generate batches from memory
+            # Calculate advantages
+            # Update networks based on PPO's objective function
+            # Clear memory after updating
+            
+        # Placeholder for learning logic
+        pass
+    
+    def act(self, player_state, opponent_state, soccer_state):
+        """
+        Main method called each timestep. Wrapper around choose_action.
+        """
+        actions = self.choose_action(player_state, opponent_state, soccer_state)
+        # Convert actions to the required format
+        # TODO action formatting
+        return actions
