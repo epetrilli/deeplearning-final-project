@@ -50,9 +50,16 @@ Important Links and Weekly Objectives/Meetings
 
 ## 1. Model the Ice Hockey PySuperTux Kart game as a gymnasium evnironment
 
-- **Task 1**: Model the observation state so that the agent can accurately perceive the game environment and make informed decisions. (can look at example state based agents)
-- **Task 2**: Define the action space (some discrete, some continuous items)
-
+- **Task 0**: Create gym.Env class with skeleton
+- **Task 1**: Define __init__() for Environment
+  - Model the observation state so that the agent can accurately perceive the game environment and make informed decisions. (can look at example state based agents)
+  - Define the action space (some discrete, some continuous items)
+  - Add graphics settings
+- **Task 2**: Define reset() function for Environment, called to reset the environment
+- **Task 3**: Define step() function for Environment. Usually accepts an action and returns observation/reward.
+- **Task 4**: Define render() function for Environment. Create graphics so we can see whats going on in the environment.
+  - Looks like pygame is recommended for this 
+- **Task 5**: Define close() func
 
 ## 2. Create a Reward Function
 
