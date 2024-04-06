@@ -48,22 +48,24 @@ Important Links and Weekly Objectives/Meetings
 
 # [Draft] Final Project Tasks
 
-## 1. Model the Ice Hockey PySuperTux Kart game as a gymnasium evnironment
+## 1. Model the Ice Hockey PySuperTux Kart game as a gymnasium environment
+https://gymnasium.farama.org/tutorials/gymnasium_basics/environment_creation/
 
-- **Task 0**: Create gym.Env class with skeleton
-- **Task 1**: Define __init__() for Environment
+- **Task 1**: Create gym.Env class with skeleton
+- **Task 2**: Define __init__() for Environment
   - Model the observation state so that the agent can accurately perceive the game environment and make informed decisions. (can look at example state based agents)
   - Define the action space (some discrete, some continuous items)
   - Add graphics settings
-- **Task 2**: Define reset() function for Environment, called to reset the environment
-- **Task 3**: Define step() function for Environment. Usually accepts an action and returns observation/reward.
-- **Task 4**: Define render() function for Environment. Create graphics so we can see whats going on in the environment.
+- **Task 3**: Define reset() function for Environment, called to reset the environment
+- **Task 4**: Define step() function for Environment. Usually accepts an action and returns observation/reward.
+- **Task 5**: Define render() function for Environment. Create graphics so we can see whats going on in the environment.
   - Looks like pygame is recommended for this 
-- **Task 5**: Define close() func
+- **Task 6**: Define close() func
+- **Task 7**: Register the env so we can use gym.make() on it
 
-## 2. Create a Reward Function
+## 2. Create a Reward Function (part of gymnasium environment step() response)
 
-Create a reward function to guide the agent's learning process towards successful strategies. Is this a part of a gymnasium environment? 
+Create a reward function to guide the agent's learning process towards successful strategies. Is this a part of a gymnasium environment? Yes ☑️
 
 - **Task 1**: Identify key behaviors to reward (e.g., scoring goals, blocking shots, maintaining possession).
 - **Task 2**: Design a formula for calculating the reward, considering immediate and long-term rewards.
