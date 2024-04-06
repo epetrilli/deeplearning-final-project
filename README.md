@@ -96,3 +96,18 @@ Use the PPO algorithm to train the RL agent, optimizing its policy for winning g
 
 - **Task 1**: Select and configure the PPO algorithm parameters / other hyper params
 - **Task 2**: Evaluate and iterate
+
+## 6. Write the report
+ - **Task 1**: Research and conform to expected style guidelines'
+ - **Task 2**: Explain RL and policy gradients in general, and PPO in specific
+ - **Task 3**: Motivate the approach in the context of the problem statement and state-based agents
+ - **Task 4**: Discuss the algorithm and any other pertinent implmentation details
+ - **Task 4**: Forecast expected results
+ - **Task 5**: Reflect on any difficulties and how they were either overcame or mitigated
+ - **Task 6**: Detail and illustrate key findings
+ - **Task 6**: Add key examples, referring back to problemmatic cases
+ - **Task 7**: Include charts, diagrams, and other visuals that summarize results
+ - **Task 8**: Optimize visual representation of report
+ - **Task 9**: Proofread the report and check for citations
+ - **Task 10**: Submit the report in expected format, guidelines, etc.
+
