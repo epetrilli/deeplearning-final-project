@@ -112,7 +112,7 @@ class Match:
     """
         Do not create more than one match per process (use ray to create more)
     """
-    def __init__(self, use_graphics=False, logging_level=None):
+    def __init__(self, use_graphics=True, logging_level=None):
         # DO this here so things work out with ray
         import pystk
         self._pystk = pystk
